@@ -1,0 +1,58 @@
+ECL,description
+ <<370391006 | Patient immunosuppressed (finding) |OR (* :<< 246075003|Causative agent| = <<19030005|HIV|),Immunosuppressed
+"(
+  << * : 363698007|Finding site| = << 12738006|Brain structure|
+) MINUS (
+  << 230690007|Stroke| OR (<<64572001|Disease|: 263502005|Clinical course| = 14803004|Transitory|)
+)",ChronicNeurologicalDisorder
+"(
+  << 49601007|Cardiovascular disease|
+) MINUS (
+  << 38341003|Hypertension|
+)",ChronicCardiacDisease
+(<< 414545008|Ischaemic heart disease| OR << 53741008|Coronary arteriosclerosis|),SevereCardiovascularDisease
+* : 116676008|Associated morphology| = << 34248003|Rheumatic inflammation|,RheumatologicalDisorder
+<< 108290001 | Radiation oncology AND/OR radiotherapy (procedure) |,Radiotherapy
+<< 111552007 | Diabetes mellitus without complication (disorder) |,DiabetesNoComplications
+<< 128241005 | Inflammatory disease of liver (disorder) |,MildLiverDisease
+"<< 128462008 | Secondary malignant neoplastic disease (disorder) | OR (64572001|Disease| : 116676008|Associated morphology| = 14799000|Neoplasm, metastatic|)
+",MetastaticDisease
+<< 13645005 | Chronic obstructive lung disease (disorder) |,CPD
+<< 195967001 | Asthma (disorder) |,Asthma
+"<< 19943007 | Cirrhosis of liver (disorder) |
+",cirrhosis
+<< 235856003 | Disorder of liver (disorder) |,ModerateSevereLiverDisease
+<< 2492009 | Nutritional disorder (disorder) |,Malnutrition
+"<< 363346000 |Malignant neoplastic disease (disorder)|
+",MalignantNeoplasm
+<< 367336001 | Chemotherapy (procedure) |,Chemotherapy
+"<< 38341003 | Hypertensive disorder, systemic arterial (disorder) |",Hypertension
+"<< 414916001 | Obesity (disorder) |
+",Obesity
+<< 50043002 | Disorder of respiratory system (disorder) |,RespiratoryDisease
+"<< 52448006 | Dementia (disorder) |
+",Dementia
+<< 64572001|Disease| : << 116676008|Associated morphology| = << 115244002|Malignant lymphoma - category|,Lymphoma
+<< 64572001|Disease| : << 116676008|Associated morphology| = << 128931003|Leukaemia (category)|,LeukaemiaMultipleMyeloma
+"<< 64572001|Disease| : << 116676008|Associated morphology| = << 86049000 |Malignant neoplasm, primary (morphologic abnormality)|",ChronicHematologicalDisease
+<< 64572001|Disease| : 116676008|Associated morphology| = << 128935007|Lymphoid leukaemia (category)|,LymphocyticLeukaemia
+<< 709044004 | Chronic kidney disease (disorder) |,ChronicKidneyDisease
+"<< 714749008 | Continuous renal replacement therapy (procedure) |
+",ChronicRenalReplacementTherapy
+<< 73211009 | Diabetes mellitus (disorder) |,DiabetesMellitus
+"<< 77176002 | Smoker (finding) |
+",Smoking
+<< 90688005 | Chronic renal failure syndrome (disorder) |,ChronicRenalFailure
+"<<13645005 | Chronic obstructive lung disease (disorder) |
+",SevereRespiratoryDisease
+"<<19030005 | Human immunodeficiency virus (organism) | OR (*: << 246075003 |Causative agent (attribute)|
+     = <<19030005 |Human immunodeficiency virus (organism)|)",AIDS
+"289908002 | Pregnancy, function (observable entity) | ",CurrentlyPregnant
+60631000119109 | Dependence on home ventilator (finding) |,HomeVentilation
+"<< 160592001 | Alcohol intake above recommended sensible limits (finding) |
+or <<228281002 | Problem drinker (finding) |
+or (* : 246075003|Causative agent| = << 53041004|Alcohol|)",Alcoholic
+"<< 56717001 | Tuberculosis (disorder) |
+",Tuberculosis
+"(<<73211009 | Diabetes mellitus (disorder) |
+MINUS << 111552007 | Diabetes mellitus without complication (disorder) |) OR (<< 116223007|Complication| : 42752001|Due to| = << 73211009|Diabetes mellitus|)",DiabetesComplications
