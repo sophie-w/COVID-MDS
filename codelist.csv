@@ -1,0 +1,121 @@
+Column name,SNOMED ECL,ICD10,OPCS4 ,Description
+pmh_hiv,<<19030005 | Human immunodeficiency virus (organism) | OR (*: << 246075003 |Causative agent (attribute)|     = <<19030005 |Human immunodeficiency virus (organism)|),B20-B24,,AIDS
+pmh_ast,<< 195967001 | Asthma (disorder) |,J45,,Asthma
+pmh_chem,<< 367336001 | Chemotherapy (procedure) |,Z51.11,,Chemotherapy
+pmh_cvd,(  << 49601007|Cardiovascular disease| ) MINUS (  << 38341003|Hypertension|),I21 - I69,,ChronicCardiacDisease
+pmh_hem,"<< 64572001|Disease| : << 116676008|Associated morphology| = << 86049000 |Malignant neoplasm, primary (morphologic abnormality)|","C81-96, D50-D77",,ChronicHematologicalDisease
+pmh_ckd,<< 709044004 | Chronic kidney disease (disorder) |,N18,,ChronicKidneyDisease
+pmh_neu,(  << * : 363698007|Finding site| = << 12738006|Brain structure| ) MINUS (   << 230690007|Stroke| OR (<<64572001|Disease|: 263502005|Clinical course| = 14803004|Transitory|)),"F01-F09, F60-89, G10-G99 (MINUS G45; G97)",,ChronicNeurologicalDisorder
+pmh_crf,<< 90688005 | Chronic renal failure syndrome (disorder) |,N18,,ChronicRenalFailure
+pmh_crrt,<< 714749008 | Continuous renal replacement therapy (procedure) |,Z99.2,,ChronicRenalReplacementTherapy
+pmh_rd,<< 13645005 | Chronic obstructive lung disease (disorder) |,J44.9,,COPD
+pmh_dem,<< 52448006 | Dementia (disorder) |,"F01-F03, G31",,Dementia
+pmh_dmcomp,<< 116223007|Complication| : 42752001|Due to| = << 73211009|Diabetes mellitus|,E08-E13 (- above),,DiabetesComplications
+pmh_dm,<< 73211009 | Diabetes mellitus (disorder) |,E08-E13,,DiabetesMellitus
+pmh_dmc,<< 111552007 | Diabetes mellitus without complication (disorder) |,E08.9-E13.9,,DiabetesNoComplications
+pmh_hv,60631000119109 | Dependence on home ventilator (finding) |,Z99.11,,HomeVentilation
+pmh_htn,"<< 38341003 | Hypertensive disorder, systemic arterial (disorder) |","I10 - I11, I13, I15",,Hypertension
+pmh_imm, <<370391006 | Patient immunosuppressed (finding) |OR (* :<< 246075003|Causative agent| = <<19030005|HIV|),B20-B24,,Immunosuppressed – secondary to HIV
+pmh_leuk,<< 64572001|Disease| : << 116676008|Associated morphology| = << 128931003|Leukaemia (category)|,"C90,C92-C95",,LeukaemiaMultipleMyeloma
+pmh_lyle,<< 64572001|Disease| : 116676008|Associated morphology| = << 128935007|Lymphoid leukaemia (category)|,C81-96,,LymphocyticLeukaemia
+pmh_lym,<< 64572001|Disease| : << 116676008|Associated morphology| = << 115244002|Malignant lymphoma - category|,C81-C88,,Lymphoma
+pmh_mhd,"<< 64572001|Disease| : << 116676008|Associated morphology| = << 86049000 |Malignant neoplasm, primary (morphologic abnormality)|",C81-96,,MalignantHematologicalDisease
+pmh_ca,<< 363346000 |Malignant neoplastic disease (disorder)|,C00-C97; D00-D09 (MINUS C77-C79),,MalignantNeoplasm
+pmh_maln,<< 2492009 | Nutritional disorder (disorder) |,E40-E46,,Malnutrition
+pmh_metd,"<< 128462008 | Secondary malignant neoplastic disease (disorder) | OR (64572001|Disease| : 116676008|Associated morphology| = 14799000|Neoplasm, metastatic|)",C77-C79,,MetastaticDisease
+pmh_mld,<< 128241005 | Inflammatory disease of liver (disorder) | MINUS (,K70-K77 (MINUS K76.7),,MildLiverDisease (No complications)
+,  << 17709002| Bleeding oesophageal varices (disorder)| OR (<<34742003| Portal hypertension (disorder)|),,,
+pmh_sld,<< 235856003 | Disorder of liver (disorder) |,K76.7; K31.811; I85.01; I85.11,,ModerateSevereLiverDisease (with complications)
+pmh_obe,<< 414916001 | Obesity (disorder) |,E66,,Obesity
+pmh_rad,<< 108290001 | Radiation oncology AND/OR radiotherapy (procedure) |,Z51.0,,Radiotherapy
+pmh_srd,<< 50043002 | Disorder of respiratory system (disorder) | MINUS (   << 13645005 | Chronic obstructive lung disease (disorder) |OR (<< 13645005 | Chronic obstructive lung disease (disorder) | OR (<<64572001|Disease|: 263502005|Clinical course| = 14803004|Transitory|)),J* (MINUS J44.9; J45; J00-J22; J80; J81.0; J93; J95); E84,,RespiratoryDisease
+pmh_rhe,* : 116676008|Associated morphology| = << 34248003|Rheumatic inflammation|,M00-M94,,RheumatologicalDisorder
+pmh_scvd,(<< 414545008|Ischaemic heart disease| OR << 53741008|Coronary arteriosclerosis|),I20-I25,,SevereCardiovascularDisease (Ischaemic Heart Disease)
+pmh_tub,<< 56717001 | Tuberculosis (disorder) |,A16,,Tuberculosis
+pmh_sm,<< 77176002 | Smoker (finding) |,F17.2,,Smoking
+pmh_etoh,<< 160592001 | Alcohol intake above recommended sensible limits (finding) |or <<228281002 | Problem drinker (finding) |or (* : 246075003|Causative agent| = << 53041004|Alcohol|),F10,,AlcoholAbuse
+pmh_chf,<<42343007 | Congestive heart failure (disorder) |,I50,,CongestiveHeartFailure
+pmh_hlip,<< 55822004 | Hyperlipidemia (disorder) |,E78 *,,hyperlipidemia
+pmh_pad,<< 399957001 | Peripheral arterial occlusive disease (disorder) ||,I739,,peripheral arterial disease
+pmh_aii,<< 64572001|Disease| : (370135005|Pathological process| = << 263680009|Autoimmune process| OR 116676008|Associated morphology| = << 409774005|Inflammatory morphology|),"D89[8-9], I514",,auto-immune or inflammatory disease
+pmh_svar,<< 72654001 | Supraventricular arrhythmia (disorder) |,I471,,supraventricular arrhythmia 
+pmh_varr,<< 44103008 | Ventricular arrhythmia (disorder) |,"I490, I472",,ventricular arrhythmia 
+pmh_cond,<< 44808001 | Conduction disorder of the heart (disorder) |,I45*,,conduction disease 
+pmh_val,<< 368009 | Heart valve disorder (disorder) |,I3[4-9]*,,valvular disease 
+pmh_cad,<< 53741008 | Coronary arteriosclerosis (disorder) |,I251,,coronary artery disease 
+pmh_chd,<< 13213009 | Congenital heart disease (disorder) |,Q249,,Congenital heart disease
+pmh_pepi,<<13200003 | Peptic ulcer (disorder) | or <<266998003 | History of peptic ulcer (situation) |or << 397825006 | Gastric ulcer (disorder),K27*,,peptic ulcer
+pmh_str,<< 230690007 |Cerebrovascular accident (disorder) |  or << 266257000 | Transient ischemic attack (disorder) |  or  <<432504007 |Cerebral infarction (disorder|,"G459, I63",,stroke/TIA
+pmh_hmp,<< 50582007 | Hemiplegia (disorder) |,G81,,hemiplegia
+symp_cough,<< 49727002 | Cough (finding) | OR << 263731006 |Coughing|,R05,,Cough
+symp_sob,<< 267036007 | Dyspnea (finding) |,R06.02,,ShortnessOfBreath
+symp_st,<< 162397003 | Pain in throat (finding) |,R07.0,,SoreThroat
+symp_cp,<< 29857009 | Chest pain (finding) |,R07.9,,ChestPain
+symp_mya,<< 68962001 | Muscle pain (finding) |, M79.1 ,,Myalgia
+symp_opty,<< 66857006 | Hemoptysis (finding) |,R04. 2,,Haemoptysis
+symp_ear,<< 16001004 | Otalgia (finding) |  or 164219003 |O/E - painful ear|,H92.0,,EarPain
+symp_wez,68095009 |Wheezing stridor| or << 56018004 |Wheezing|,R06.2,,Wheezing
+symp_jp,<< 57676002 | Joint pain (finding) |,M35.5,,JointPain
+symp_ftg,<< 84229001 | Fatigue (finding) |,R53,,Fatigue
+symp_lcwi,<< 67909005 | Chest wall retraction (finding) |,-,,LowerChestWallIndrawn
+symp_heada,<< 25064002 | Headache (finding) |,R51,,Headache
+symp_con,<< 3006004 | Disturbance of consciousness (finding) |,R40,,AlteredConsciousness
+symp_abp,21522001 | Abdominal pain (finding) |,R10,,AbdominalPain
+symp_cjv,<< 9826008 | Conjunctivitis (disorder) |,H10,,Conjunctivitis
+symp_sr,<< 271807003 | Eruption of skin (disorder) |,R21,,SkinRash
+symp_su,<< 46742003 | Skin ulcer (disorder) |,L98.4,,SkinUlcer
+symp_lymph,<< 30746006 | Lymphadenopathy (disorder) |,L04.9,,Lymphadenopathy
+symp_hae,<< 131148009 | Bleeding (finding) |,R58,,Bleeding 
+symp_rhinor,64531003 | Nasal discharge (finding) |,R09.8,,Rhinorrhoea
+symp_vom,<< 422400008 | Vomiting (disorder) |,R11.10,,Vomiting
+symp_diar,<< 62315008 | Diarrhoea (finding) |,R19.7,,Diarrhoea
+symp_fev,<< 386661006 | Fever (finding) |,R50.9,,High Temperature
+symp_age,<< 36955009 | Loss of taste (finding) |,R43.2,,Ageusia (loss of taste)
+symp_ano,<< 44169009 | Loss of sense of smell (finding) |,R43.0,,Anosmia (loss of sense of smell)
+,,,,
+comp_vpn,<< 75570004 | Viral pneumonia (disorder) |,J12,,Viral pneumonia
+comp_bpn,<< 53084003 |Bacterial pneumonia| OR << 308906005 |Secondary bacterial pneumonia| OR << 713525001 |Recurrent bacterial pneumonia| OR << 276693005 |Congenital bacterial pneumonia| OR 408680002 |Healthcare associated bacterial pneumonia (disorder)|,J13-J15,,Bacterial pneumonia
+comp_ards,<< 67782005 | Acute respiratory distress syndrome (disorder) |,J80 ,,ARDS
+comp_pnt,<< 36118008 | Pneumothorax (disorder) |,J93,,Pneumothorax
+comp_plef,<< 60046008 | Pleural effusion (disorder) |,J90-J91,,Pleural effusion
+comp_bron,"* : (363698007|Finding site| = << 955009|Bronchial structure|, 116676008|Associated morphology| = << 409774005|Inflammatory morphology|)",J21,,Bronchiolitis
+comp_me,<< 7180009 | Meningitis (disorder) | OR << 45170000 | Encephalitis (disorder) |,A83 - A87,,MeningitisEncephalitis
+comp_seiz,<< 91175000 | Seizure (finding) |,G40,,Seizure
+comp_stroke,<< 230690007 | Cerebrovascular accident (disorder) |,I63,,StrokeCVA
+comp_chf,<< 42343007 | Congestive heart failure (disorder) |,I50,,CongestiveHeartFailure
+comp_emp,<< 56819008 | Endocarditis (disorder) | OR << 50920009 |Myocarditis| OR << 3238004 |Pericarditis|,I30 - I41,,EndocarditisMyocarditisPericarditis
+comp_carr,<< 698247007 | Cardiac arrhythmia (disorder) |,I49,,CardiacArrhythmia
+comp_cisc,<< 414795007 | Myocardial ischemia (disorder) |,I24-I25,,Cardiac Ischemia
+comp_bac,<< 5758002 | Bacteremia (finding) |,R78.8,,Bacteraemia
+comp_ane,<< 271737000 | Anemia (disorder) |,D64,,Anaemia
+comp_pan,75694006 | Pancreatitis (disorder) |,K85,,Pancreatitis
+comp_livd,<< 243978007 | Liver damage (disorder) |,K76.9,,LiverDys
+comp_hyperg,<< 80394007 | Hyperglycemia (disorder) |,R73.9,,Hyperglycemia
+comp_hypog,<< 302866003 | Hypoglycemia (disorder) |,E16.2,,Hypoglycemia 
+comp_coagd,64779008 | Blood coagulation disorder (disorder) |,D68,,CoagulationDisorder
+comp_rhav,<< 26889001 | Myositis (disorder) | or 240131006 | Rhabdomyolysis (disorder) |,"M60, M62-M68",,RhabdomyolysisMyositis
+comp_ari,<<14669001 | Acute renal failure syndrome (disorder) |,N17.8,,AcuteRenalFailure
+comp_gash,<<74474003 | Gastrointestinal haemorrhage (disorder) |,K92.2,,GastrointestinalHaemorrhage
+comp_pemb,<< 59282003 | Pulmonary embolism (disorder) |,I26,,PulmonaryEmbolism
+comp_thromb,* :  116676008 |Associated morphology (attribute)| = 396339007 |Thrombus (morphologic abnormality)|,I82,,Thrombosis
+comp_sho,<< 27942005 | Shock (disorder) |,R57*,,shock
+proc_BIPAP,<< 243142003| Dual pressure spontaneous ventilation support (regime/therapy) |,-,E852,BIPAP
+proc_chem,<< 367336001 | Chemotherapy (procedure) |,Z51.11,X[37]%,Chemotherapy
+proc_CPAP,<< 47545007 |Continuous positive airway pressure ventilation treatment (regime/therapy)|,-,E856,CPAP
+proc_crrt,<< 714749008 | Continuous renal replacement therapy (procedure) |,Z99.2,X40%,ChronicRenalReplacementTherapy
+proc_CT,<< 77477000 |Computerized axial tomography (procedure)|,-,U[0123]%,CT
+proc_CVP,"<< 52124006 |Central venous catheter, device (physical object)|",-,-,CVP (Central venous catheter)
+proc_CXR,<< 399208008 |Plain chest X-ray (procedure)|,-,U073,ChestXR
+proc_ECMO,<< 233573008 | Extracorporeal membrane oxygenation (procedure) |,-,X581,ECMO
+proc_exc,"<< 26412008 |Endotracheal tube, device (physical object)|",-,-,Exubated
+proc_int,<< 52765003 |Intubation (procedure)|,-,X56%,Intubation
+proc_NOI,<< 6710000 |Nitric oxide (substance)|,-,-,Nitric oxide inhalation
+proc_osup,<< 57485005 |Oxygen therapy (procedure)|,-,X5[2],Oxygen Support
+,,,E87,
+proc_prone,<< 1240000 |Prone body position (finding)|,-,-,Proning
+proc_rad,<< 108290001 | Radiation oncology AND/OR radiotherapy (procedure) |,Z51.0,X6[578] OR Y91,Radiotherapy
+proc_rup,<< 53950000 |Respiratory therapy (procedure)|,-,E85-98,Respiratory support
+proc_trac,<< 426153007 |Insertion of artificial airway (procedure)|,-,-,Tracheotomy
+proc_ven,<< 40617009 |Artificial respiration (procedure)|,-,E85 OR D[12]%,Ventilation
+proc_iven,,,,Intensive ventilation (from mandated reports)
+proc_HFNO,,,,High-flow nasal oxygen therapy (from mandated reports)
